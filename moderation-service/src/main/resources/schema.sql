@@ -1,18 +1,18 @@
-CREATE TABLE users (
+CREATE TABLE IF NOT EXISTS users (
     id BIGSERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE tool (
+CREATE TABLE IF NOT EXISTS tool (
     id BIGSERIAL PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     description TEXT,
     launch_date DATE
 );
 
-CREATE TABLE tool_comment (
+CREATE TABLE IF NOT EXISTS tool_comment (
     id BIGSERIAL PRIMARY KEY,
     user_id BIGINT REFERENCES users(id),
     tool_id BIGINT REFERENCES tool(id),
@@ -21,7 +21,7 @@ CREATE TABLE tool_comment (
     downvote INTEGER
 );
 
-CREATE TABLE tool_like (
+CREATE TABLE IF NOT EXISTS tool_like (
     id BIGSERIAL PRIMARY KEY,
     user_id BIGINT REFERENCES users(id),
     tool_id BIGINT REFERENCES tool(id)
