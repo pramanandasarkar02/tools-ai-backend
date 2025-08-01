@@ -14,4 +14,6 @@ public class Tool {
     private String title;
     private String description;
     private LocalDate launchDate;
+//    image
+//    short description
 }
