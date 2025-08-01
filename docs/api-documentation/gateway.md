@@ -10,7 +10,61 @@
 - U - user
 
 ## api gateway
+**ServerURL**: `http://localhost:8080`
+### unauthenticated user request 
+- GET `/tools` : returns all tools
+- GET `/company` : return all companies
 
+### user request
+- POST `/signup` : user signup
+- POST `/signin` : user signin 
+###
+
+- GET `/tools` : get recommended tools
+- GET `/tools/:toolId` : get tool by id
+- POST `/tools/:toolId/comment/:userId` : post comment on tools
+- GET `/tools/:toolId/comment/:userId` : get comments on tool
+- POST `/tools/:toolId/comment/:commentId/upvote/:userId` : upvote comment
+- POST `/tools/:toolId/comment/:commentId/downvote/:userId` : downvote comment
+- GET `/tools/:toolId/like/:userId` : get likes on tool
+- POST `/tools/:toolId/like/:userId` : post like on tool
+###
+- GET `/tools/search/:userId` : search tools by on different category in our website
+- POST `/tools/prompt/:userId` : give prompt to user to search tools
+
+### 
+- POST `/company/:companyId/:userId` : follow the company 
+- GET `/company/:companyId/:userId` : get company profile
+- GET `/notifications/:userId` : get user by id
+- POST `/notifications/reply/:userId` : replay to the server
+
+**direct chat boot discussion** - may be websocket works
+
+
+### admin request
+- GET `/users` : get all users
+- POST `/users/deactivate/:userId` : deactivate user
+- POST `/users/activate/:userId` : activate user
+- POST `/users/promote/:userId` : promote user as moderator
+- POST `/users/demote/:userId` : demote user as moderator
+###
+- GET `/tools` : get all tools
+- POST `/tools/create` : create tool
+- POST `/tools/delete/:toolId` : delete tool
+- POST `/tools/update/:toolId` : update tool
+- POST `/tools/activate/:toolId` : activate tool
+- POST `/tools/deactivate/:toolId` : deactivate tool
+- POST `/tools/promote/:toolId` : promote tool as featured
+- POST `/tools/demote/:toolId` : demote tool as featured
+###
+- POST `/tools/:toolId/comments/:commentId` : delete comment
+
+### stats 
+**public stats**: 
+- GET `/stats/` : get public stats
+
+**admin stats**:
+- GET `/stats/admin` : get total users
 
 ## auth-service
 - first implemented with jwt then oauth2 integration
@@ -235,7 +289,7 @@ response:
 ```
 
 
-## notification-service - later
+## notification-and-feedback-service - later
 **inbox message and email message service** 
 **every event and admin message will be send on indox and email**
 - send message (A/M)
