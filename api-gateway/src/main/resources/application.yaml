@@ -1,0 +1,75 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          discovery:
+            locator:
+              enabled: true
+              lower-case-service-id: true
+          routes:
+            # Auth Service routes
+            - id: auth_signup
+              uri: lb://AUTH-SERVICE
+              predicates:
+                - Path=/api/auth/signup
+                - Method=POST
+            - id: auth_signin
+              uri: lb://AUTH-SERVICE
+              predicates:
+                - Path=/api/auth/signin
+                - Method=POST
+            - id: auth_validate
+              uri: lb://AUTH-SERVICE
+              predicates:
+                - Path=/api/auth/validate
+                - Method=POST
+              filters:
+                - name: RequestHeaderTokenFilter
+                  args:
+                    headerName: Authorization
+            # Tool Service Routes
+            - id: tools_create
+              uri: lb://MODERATION-SERVICE
+              predicates:
+                - Path=/api/tools
+                - Method=POST
+              filters:
+                - name: RequestHeaderTokenFilter
+                  args:
+                    headerName: Authorization
+            - id: tools_get_all
+              uri: lb://MODERATION-SERVICE
+              predicates:
+                - Path=/api/tools
+                - Method=GET
+            - id: tools_get_one
+              uri: lb://MODERATION-SERVICE
+              predicates:
+                - Path=/api/tools/**
+                - Method=GET
+              filters:
+                - name: RequestHeaderTokenFilter
+                  args:
+                    headerName: Authorization
+            - id: tools_delete
+              uri: lb://MODERATION-SERVICE
+              predicates:
+                - Path=/api/tools/**
+                - Method=DELETE
+              filters:
+                - name: RequestHeaderTokenFilter
+                  args:
+                    headerName: Authorization
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true

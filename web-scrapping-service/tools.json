@@ -1,0 +1,330 @@
+{
+    "tools": [
+        {
+            "name": "ChatGPT",
+            "models": [
+                {
+                    "name": "GPT-4",
+                    "price": 0.03
+                },
+                {
+                    "name": "GPT-3.5",
+                    "price": 0.002
+                }
+            ],
+            "description": "ChatGPT is a conversational AI model that can be used for a variety of tasks, including answering questions, generating text, and more.",
+            "image": "./assets/images/chatgpt.png",
+            "link": "https://chat.openai.com/",
+            "tags": [
+                "AI",
+                "Chatbot",
+                "LLM"
+            ],
+            "type": "AI",
+            "organization": "OpenAI",
+            "license": "Proprietary",
+            "version": "4.0"
+        },
+        {
+            "name": "Gemini (formerly Bard)",
+            "models": [
+                {
+                    "name": "Gemini 1.5",
+                    "price": 0.0
+                },
+                {
+                    "name": "Gemini Pro",
+                    "price": 0.0
+                }
+            ],
+            "description": "Gemini is Google's AI chatbot, capable of text and image-based responses, integrated with Google services.",
+            "image": "./assets/images/gemini.png",
+            "link": "https://gemini.google.com/",
+            "tags": [
+                "AI",
+                "Chatbot",
+                "LLM"
+            ],
+            "type": "AI",
+            "organization": "Google DeepMind",
+            "license": "Proprietary",
+            "version": "1.5"
+        },
+        {
+            "name": "Claude",
+            "models": [
+                {
+                    "name": "Claude 3 Opus",
+                    "price": 0.015
+                },
+                {
+                    "name": "Claude 3 Sonnet",
+                    "price": 0.003
+                }
+            ],
+            "description": "Claude is an AI assistant focused on helpful, harmless, and honest interactions, developed by Anthropic.",
+            "image": "./assets/images/claude.png",
+            "link": "https://claude.ai/",
+            "tags": [
+                "AI",
+                "Chatbot",
+                "LLM"
+            ],
+            "type": "AI",
+            "organization": "Anthropic",
+            "license": "Proprietary",
+            "version": "3.0"
+        },
+        {
+            "name": "MidJourney",
+            "models": [
+                {
+                    "name": "MidJourney v6",
+                    "price": 10.0
+                }
+            ],
+            "description": "MidJourney is an AI-powered image generation tool that creates artwork from text prompts.",
+            "image": "./assets/images/midjourney.png",
+            "link": "https://www.midjourney.com/",
+            "tags": [
+                "AI",
+                "Image Generation",
+                "Generative Art"
+            ],
+            "type": "Image Generation",
+            "organization": "MidJourney",
+            "license": "Proprietary",
+            "version": "6.0"
+        },
+        {
+            "name": "Stable Diffusion",
+            "models": [
+                {
+                    "name": "SDXL 1.0",
+                    "price": 0.0
+                }
+            ],
+            "description": "Stable Diffusion is an open-source text-to-image model for generating high-quality images.",
+            "image": "./assets/images/stable_diffusion.png",
+            "link": "https://stablediffusionweb.com/",
+            "tags": [
+                "AI",
+                "Image Generation",
+                "Open Source"
+            ],
+            "type": "Image Generation",
+            "organization": "Stability AI",
+            "license": "CreativeML Open RAIL-M",
+            "version": "SDXL 1.0"
+        },
+        {
+            "name": "DALL·E",
+            "models": [
+                {
+                    "name": "DALL·E 3",
+                    "price": 0.04
+                }
+            ],
+            "description": "DALL·E is OpenAI's AI system for generating realistic images from text descriptions.",
+            "image": "./assets/images/dalle.png",
+            "link": "https://openai.com/dall-e",
+            "tags": [
+                "AI",
+                "Image Generation"
+            ],
+            "type": "Image Generation",
+            "organization": "OpenAI",
+            "license": "Proprietary",
+            "version": "3.0"
+        },
+        {
+            "name": "Whisper",
+            "models": [
+                {
+                    "name": "Whisper Large-v3",
+                    "price": 0.0
+                }
+            ],
+            "description": "Whisper is an automatic speech recognition (ASR) system trained on multilingual and multitask data.",
+            "image": "./assets/images/whisper.png",
+            "link": "https://openai.com/research/whisper",
+            "tags": [
+                "AI",
+                "Speech Recognition",
+                "Open Source"
+            ],
+            "type": "Speech-to-Text",
+            "organization": "OpenAI",
+            "license": "MIT",
+            "version": "Large-v3"
+        },
+        {
+            "name": "ElevenLabs",
+            "models": [
+                {
+                    "name": "Eleven Multilingual v2",
+                    "price": 0.0005
+                }
+            ],
+            "description": "ElevenLabs provides AI-powered text-to-speech and voice cloning with natural-sounding voices.",
+            "image": "./assets/images/elevenlabs.png",
+            "link": "https://elevenlabs.io/",
+            "tags": [
+                "AI",
+                "Text-to-Speech",
+                "Voice Cloning"
+            ],
+            "type": "Text-to-Speech",
+            "organization": "ElevenLabs",
+            "license": "Proprietary",
+            "version": "2.0"
+        },
+        {
+            "name": "GitHub Copilot",
+            "models": [
+                {
+                    "name": "Copilot X",
+                    "price": 10.0
+                }
+            ],
+            "description": "GitHub Copilot is an AI pair programmer that suggests code completions in real-time.",
+            "image": "./assets/images/copilot.png",
+            "link": "https://github.com/features/copilot",
+            "tags": [
+                "AI",
+                "Code Generation",
+                "Developer Tools"
+            ],
+            "type": "Code Assistant",
+            "organization": "GitHub (Microsoft)",
+            "license": "Proprietary",
+            "version": "X"
+        },
+        {
+            "name": "Runway ML",
+            "models": [
+                {
+                    "name": "Gen-2",
+                    "price": 15.0
+                }
+            ],
+            "description": "Runway ML offers AI-powered creative tools for video, image, and text generation.",
+            "image": "./assets/images/runway.png",
+            "link": "https://runwayml.com/",
+            "tags": [
+                "AI",
+                "Video Generation",
+                "Creative Tools"
+            ],
+            "type": "Multimedia AI",
+            "organization": "Runway",
+            "license": "Proprietary",
+            "version": "Gen-2"
+        },
+        {
+            "name": "Hugging Face",
+            "models": [
+                {
+                    "name": "Transformers Library",
+                    "price": 0.0
+                }
+            ],
+            "description": "Hugging Face provides open-source AI models and datasets for NLP, vision, and more.",
+            "image": "./assets/images/huggingface.png",
+            "link": "https://huggingface.co/",
+            "tags": [
+                "AI",
+                "Open Source",
+                "NLP"
+            ],
+            "type": "AI Platform",
+            "organization": "Hugging Face",
+            "license": "Apache 2.0",
+            "version": "4.0"
+        },
+        {
+            "name": "Llama 2",
+            "models": [
+                {
+                    "name": "Llama 2 70B",
+                    "price": 0.0
+                }
+            ],
+            "description": "Meta's open-source large language model, available for research and commercial use.",
+            "image": "./assets/images/llama.png",
+            "link": "https://ai.meta.com/llama/",
+            "tags": [
+                "AI",
+                "LLM",
+                "Open Source"
+            ],
+            "type": "AI",
+            "organization": "Meta",
+            "license": "Llama 2 Community License",
+            "version": "2.0"
+        },
+        {
+            "name": "Perplexity AI",
+            "models": [
+                {
+                    "name": "Perplexity Pro",
+                    "price": 20.0
+                }
+            ],
+            "description": "Perplexity AI is an AI-powered search engine that provides accurate, cited answers.",
+            "image": "./assets/images/perplexity.png",
+            "link": "https://www.perplexity.ai/",
+            "tags": [
+                "AI",
+                "Search Engine",
+                "LLM"
+            ],
+            "type": "AI Search",
+            "organization": "Perplexity AI",
+            "license": "Proprietary",
+            "version": "Pro"
+        },
+        {
+            "name": "Suno AI (Bark)",
+            "models": [
+                {
+                    "name": "Bark v2",
+                    "price": 0.0
+                }
+            ],
+            "description": "Suno AI's Bark is a text-to-speech model capable of generating highly realistic voices.",
+            "image": "./assets/images/bark.png",
+            "link": "https://suno-ai.notion.site/Bark-Examples-5edae8b02a604b54a72844f76d4b2bde",
+            "tags": [
+                "AI",
+                "Text-to-Speech",
+                "Open Source"
+            ],
+            "type": "Text-to-Speech",
+            "organization": "Suno AI",
+            "license": "MIT",
+            "version": "2.0"
+        },
+        {
+            "name": "DeepSeek",
+            "models": [
+                {
+                    "name": "DeepSeek-V3",
+                    "price": 0.0
+                }
+            ],
+            "description": "DeepSeek is a powerful open-source LLM supporting long-context understanding.",
+            "image": "./assets/images/deepseek.png",
+            "link": "https://deepseek.com/",
+            "tags": [
+                "AI",
+                "LLM",
+                "Open Source"
+            ],
+            "type": "AI",
+            "organization": "DeepSeek",
+            "license": "Apache 2.0",
+            "version": "V3"
+        }
+    ]
+}

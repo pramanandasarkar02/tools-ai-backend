@@ -1,0 +1,3 @@
+- auth service
+- moderator service
+- web-scrapping-service
